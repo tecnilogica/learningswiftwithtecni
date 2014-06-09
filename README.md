@@ -1,2 +1,2 @@
-Learning swift with Tecnilógica
+Learning Swift with Tecnilógica
 ===============================
