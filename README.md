@@ -1,5 +1,5 @@
-Learning Swift with Tecnilógica
-===============================
+Learning Swift with Tecnilógica by example
+==========================================
 01 Conway's game of life
 ------------------------
 Featuring:
