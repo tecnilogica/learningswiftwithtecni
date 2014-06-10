@@ -14,15 +14,14 @@ class ViewController: UIViewController {
     
     
     
-    var lifeCanvas:Life = Life()
-    
+    @IBOutlet var lifeCanvas : Life
+
     
     
     override func viewDidLoad() {
-        
+
         super.viewDidLoad()
-        self.view.addSubview(lifeCanvas)
-        
+
     }
 
     
@@ -47,10 +46,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 
     
     

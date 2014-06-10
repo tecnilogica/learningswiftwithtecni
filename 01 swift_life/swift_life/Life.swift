@@ -17,7 +17,8 @@ class Life: UIView {
     
     
     //Width and Height of the world. Harcoded
-    let (worldW, worldH) = (40,65)
+    let (worldW, worldH) = (40,UIScreen.mainScreen().bounds.height == 480 ? 51 : 62)
+    let cellSize:CGFloat = 8.0
     
     //Arrays to store the current world
     var currentWorld: Int8[]
@@ -28,7 +29,7 @@ class Life: UIView {
 
     
     
-    init() {
+    init(coder aDecoder: NSCoder!)  {
 
         //Initialize world arrays
         currentWorld = Int8[](count: worldW * worldH, repeatedValue: 0)
@@ -38,12 +39,12 @@ class Life: UIView {
         ticker = NSTimer()
         
         //Initialize the view
-        super.init(frame: CGRectMake(0, 0, 320, 520))
-        self.backgroundColor = UIColor.clearColor()
+        super.init(coder: aDecoder)
+        //self.backgroundColor = UIColor.clearColor()
         
         //Fill current world with random data
         seedWorld()
-
+        
     }
     
     
@@ -153,7 +154,7 @@ class Life: UIView {
             for x in 0..worldW {
                 
                 if currentWorld[x + y * worldW]==1 {
-                    var rectangle = CGRectMake(CGFloat(8 * x), CGFloat(8 * y), 8, 8)
+                    var rectangle = CGRectMake(cellSize*CGFloat(x),cellSize*CGFloat(y), cellSize, cellSize)
                     CGContextFillRect(context, rectangle);
                     
                 }

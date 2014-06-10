@@ -401,6 +401,7 @@
 				0D9F087E1941A5B7008B74C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D9F087F1941A5B7008B74C8 /* Build configuration list for PBXNativeTarget "swift_lifeTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +410,7 @@
 				0D9F08811941A5B7008B74C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
