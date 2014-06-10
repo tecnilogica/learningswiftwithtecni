@@ -40,7 +40,6 @@ class Life: UIView {
         
         //Initialize the view
         super.init(coder: aDecoder)
-        //self.backgroundColor = UIColor.clearColor()
         
         //Fill current world with random data
         seedWorld()
