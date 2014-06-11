@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Tecnilogica. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import QuartzCore
 
