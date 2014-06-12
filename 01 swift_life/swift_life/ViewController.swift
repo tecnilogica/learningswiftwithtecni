@@ -31,9 +31,9 @@ class ViewController: UIViewController {
         lifeCanvas.changeWorldStatus()
         
         if lifeCanvas.isRunning {
-            sender.setTitle("Stop", forState: UIControlState.Normal)
+            sender.setTitle("Stop", forState: .Normal)
         } else {
-            sender.setTitle("Start", forState: UIControlState.Normal)
+            sender.setTitle("Start", forState: .Normal)
         }
         
     }
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
 
     
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) {
-        if motion == UIEventSubtype.MotionShake {
+        if motion == .MotionShake {
             lifeCanvas.seedWorld()
         }
     }

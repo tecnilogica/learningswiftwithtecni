@@ -102,7 +102,7 @@ class Life: UIView {
         
         //println("init generation")
 
-        var currentTime = CACurrentMediaTime()
+        let currentTime = CACurrentMediaTime()
         let futureWorld = Int8[](count: worldW * worldH, repeatedValue: 0)
 
         var index = 0;
