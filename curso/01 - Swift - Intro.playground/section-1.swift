@@ -5,7 +5,7 @@ import Cocoa
 
 
 
-//1 TIPOS
+//MARK: 1 TIPOS
 //------------------------------------------------------
 var address:String = "Doctor Fourquet 20, bajo"
 var CP:Int = 28012
@@ -51,7 +51,7 @@ println(TipoDeBoton.Cancel.toRaw())
 
 
 
-//2 CADENAS
+//MARK: 2 CADENAS
 //------------------------------------------------------
 //2.1 Concatenación e interpolación
 var stringConcat = "Primera frase."
@@ -97,7 +97,7 @@ let dobleCadena = Double("3.14".bridgeToObjectiveC().doubleValue)
 //Se accede a ellos con Ctrl + ⌘ + Espacio
 //Ojo a la longitud que devuelven los diferentes métodos
 "😩".length
-"😩".utf16count
+"😩".utf16Count
 countElements("😩")
 
 
@@ -108,7 +108,7 @@ countElements("😩")
 
 
 
-//3 ARRAYS
+//MARK: 3 ARRAYS
 //------------------------------------------------------
 //3.1 Declaración
 var primeNumbers = [1,2,3,5,7,11]
@@ -118,7 +118,9 @@ primeNumbers.count
 
 //Han cambiado la forma de declarar los arrays
 //Antes era var primeNumbers2:Int[] = []
+
 var primeNumbers2:[Int]
+var primeNumbers3 = [Int]()
 
 
 
@@ -195,7 +197,7 @@ suma
 
 
 
-//4 DICCIONARIOS
+//MARK: 4 DICCIONARIOS
 //------------------------------------------------------
 //4.1 Declaración
 var DNINombres = ["33779P":"Juan",
@@ -203,13 +205,8 @@ var DNINombres = ["33779P":"Juan",
 
 
 
-//Declaración larga
-var DNINombres1:Dictionary<String, String> = Dictionary<String, String>()
-
-
-
 //Declaración corta, recomendada
-var DNINombres2 = Dictionary<String, String>()
+var DNINombres2 = [String: String]()
 
 
 
@@ -235,7 +232,7 @@ DNINombres
 
 
 
-//5 FLUJO
+//MARK: 5 FLUJO
 //------------------------------------------------------
 //5.1 Bucles con rangos, sobre arrays y diccionarios, bucles tradicionales
 //También se pueden usar do y while
@@ -296,7 +293,7 @@ for nombre in nombreAsistentes {
 
 
 
-//6 FUNCIONES
+//MARK: 6 FUNCIONES
 //------------------------------------------------------
 //Definiión normal
 func suma1 (a: Int, b: Int) -> Int {
@@ -388,7 +385,7 @@ sumatorio(1,2,5,7)
 
 
 
-//7 CLOSURES
+//MARK: 7 CLOSURES
 //------------------------------------------------------
 //Bloques autocontenidos
 //Similar a los lambdas en otros lenguajes o a los blocks en Objective-C
@@ -420,7 +417,7 @@ repetidor(5,"José Luis",saludeitor)
 
 
 
-//8 TIPOS AVANZADOS
+//MARK: 8 TIPOS AVANZADOS
 //------------------------------------------------------
 //8.1 Opcionales
 
@@ -563,7 +560,7 @@ e2.description
 
 
 
-//9 CLASES
+//MARK: 9 CLASES
 //------------------------------------------------------
 //9.1 Definición. Igual que en los enums y structs, podemos usar 
 //propiedades calculadas
