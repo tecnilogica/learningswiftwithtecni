@@ -13,10 +13,8 @@ import QuartzCore
 class ViewController: UIViewController {
     
     
-    
-    @IBOutlet var lifeCanvas : Life
+    @IBOutlet weak var lifeCanvas : Life!
 
-    
     
     override func viewDidLoad() {
 
