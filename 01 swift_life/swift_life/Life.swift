@@ -20,7 +20,7 @@ class Life: UIView {
     let cellSize:CGFloat = 8.0
     
     //Arrays to store the current world
-    var currentWorld: Int8[]
+    var currentWorld: [Int8]
     
     //Time related data
     var isRunning: Bool
@@ -31,7 +31,7 @@ class Life: UIView {
     init(coder aDecoder: NSCoder!)  {
 
         //Initialize world arrays
-        currentWorld = Int8[](count: worldW * worldH, repeatedValue: 0)
+        currentWorld = [Int8](count: worldW * worldH, repeatedValue: 0)
         
         //The world is frozen
         isRunning = false
@@ -49,7 +49,7 @@ class Life: UIView {
     
     //Function to seed the world
     func seedWorld() {
-        for f in 0..worldW * worldH {
+        for f in 0..<worldW * worldH {
             currentWorld[f] = Int8(arc4random()%2)
         }
         self.setNeedsDisplay()
@@ -103,13 +103,13 @@ class Life: UIView {
         //println("init generation")
 
         let currentTime = CACurrentMediaTime()
-        let futureWorld = Int8[](count: worldW * worldH, repeatedValue: 0)
-
+        var futureWorld = [Int8](count: worldW * worldH, repeatedValue: 0)
+        
         var index = 0;
         
-        for y in 0..worldH {
+        for y in 0..<worldH {
             
-            for x in 0..worldW {
+            for x in 0..<worldW {
                 
                 var neighbours = neighbourCellState(x-1,y:y-1) +
                     neighbourCellState(x,y:y-1) +
@@ -147,9 +147,9 @@ class Life: UIView {
         
         CGContextSetRGBFillColor(context, 189/255, 195/255, 199/255, 1.0);
         
-        for y in 0..worldH {
+        for y in 0..<worldH {
             
-            for x in 0..worldW {
+            for x in 0..<worldW {
                 
                 if currentWorld[x + y * worldW]==1 {
                     var rectangle = CGRectMake(cellSize*CGFloat(x),cellSize*CGFloat(y), cellSize, cellSize)
