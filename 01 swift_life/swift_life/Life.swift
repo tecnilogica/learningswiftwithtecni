@@ -105,7 +105,7 @@ class Life: UIView {
         let currentTime = CACurrentMediaTime()
         var futureWorld = [Int8](count: worldW * worldH, repeatedValue: 0)
         
-        var index = 0;
+        var index = 0
         
         for y in 0..<worldH {
             
