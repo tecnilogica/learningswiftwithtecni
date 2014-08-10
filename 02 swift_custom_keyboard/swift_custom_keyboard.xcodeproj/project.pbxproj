@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D03AC061994F917007DCE8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D03AC051994F917007DCE8A /* AppDelegate.swift */; };
+		0D03AC081994F917007DCE8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D03AC071994F917007DCE8A /* ViewController.swift */; };
+		0D03AC0B1994F917007DCE8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D03AC091994F917007DCE8A /* Main.storyboard */; };
+		0D03AC0D1994F917007DCE8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D03AC0C1994F917007DCE8A /* Images.xcassets */; };
+		0D03AC191994F917007DCE8A /* swift_custom_keyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D03AC181994F917007DCE8A /* swift_custom_keyboardTests.swift */; };
+		0D1C28E51994FAAB00664C32 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C28E41994FAAB00664C32 /* KeyboardViewController.swift */; };
+		0D1C28E81994FAAB00664C32 /* FlamencacaKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0D1C28E01994FAAB00664C32 /* FlamencacaKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0D1C28F21995047400664C32 /* KeyboardInterface.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1C28F11995047400664C32 /* KeyboardInterface.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D03AC131994F917007DCE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D03ABF81994F917007DCE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D03ABFF1994F917007DCE8A;
+			remoteInfo = swift_custom_keyboard;
+		};
+		0D1C28E61994FAAB00664C32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D03ABF81994F917007DCE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D1C28DF1994FAAB00664C32;
+			remoteInfo = FlamencacaKeyboard;
+		};
+		0D1C28E91994FAAB00664C32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D03ABF81994F917007DCE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D1C28DF1994FAAB00664C32;
+			remoteInfo = FlamencacaKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D1C28EE1994FAAB00664C32 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0D1C28E81994FAAB00664C32 /* FlamencacaKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D03AC001994F917007DCE8A /* swift_custom_keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_custom_keyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D03AC041994F917007DCE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D03AC051994F917007DCE8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D03AC071994F917007DCE8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D03AC0A1994F917007DCE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D03AC0C1994F917007DCE8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0D03AC121994F917007DCE8A /* swift_custom_keyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_custom_keyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D03AC171994F917007DCE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D03AC181994F917007DCE8A /* swift_custom_keyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_custom_keyboardTests.swift; sourceTree = "<group>"; };
+		0D1C28E01994FAAB00664C32 /* FlamencacaKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlamencacaKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D1C28E31994FAAB00664C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D1C28E41994FAAB00664C32 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		0D1C28F11995047400664C32 /* KeyboardInterface.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardInterface.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D03ABFD1994F917007DCE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D03AC0F1994F917007DCE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D1C28DD1994FAAB00664C32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D03ABF71994F917007DCE8A = {
+			isa = PBXGroup;
+			children = (
+				0D03AC021994F917007DCE8A /* swift_custom_keyboard */,
+				0D03AC151994F917007DCE8A /* swift_custom_keyboardTests */,
+				0D1C28E11994FAAB00664C32 /* FlamencacaKeyboard */,
+				0D03AC011994F917007DCE8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D03AC011994F917007DCE8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D03AC001994F917007DCE8A /* swift_custom_keyboard.app */,
+				0D03AC121994F917007DCE8A /* swift_custom_keyboardTests.xctest */,
+				0D1C28E01994FAAB00664C32 /* FlamencacaKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D03AC021994F917007DCE8A /* swift_custom_keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0D03AC051994F917007DCE8A /* AppDelegate.swift */,
+				0D03AC071994F917007DCE8A /* ViewController.swift */,
+				0D03AC091994F917007DCE8A /* Main.storyboard */,
+				0D03AC0C1994F917007DCE8A /* Images.xcassets */,
+				0D03AC031994F917007DCE8A /* Supporting Files */,
+			);
+			path = swift_custom_keyboard;
+			sourceTree = "<group>";
+		};
+		0D03AC031994F917007DCE8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D03AC041994F917007DCE8A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D03AC151994F917007DCE8A /* swift_custom_keyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D03AC181994F917007DCE8A /* swift_custom_keyboardTests.swift */,
+				0D03AC161994F917007DCE8A /* Supporting Files */,
+			);
+			path = swift_custom_keyboardTests;
+			sourceTree = "<group>";
+		};
+		0D03AC161994F917007DCE8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D03AC171994F917007DCE8A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D1C28E11994FAAB00664C32 /* FlamencacaKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0D1C28E41994FAAB00664C32 /* KeyboardViewController.swift */,
+				0D1C28E21994FAAB00664C32 /* Supporting Files */,
+				0D1C28F11995047400664C32 /* KeyboardInterface.xib */,
+			);
+			path = FlamencacaKeyboard;
+			sourceTree = "<group>";
+		};
+		0D1C28E21994FAAB00664C32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D1C28E31994FAAB00664C32 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D03ABFF1994F917007DCE8A /* swift_custom_keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D03AC1C1994F917007DCE8A /* Build configuration list for PBXNativeTarget "swift_custom_keyboard" */;
+			buildPhases = (
+				0D03ABFC1994F917007DCE8A /* Sources */,
+				0D03ABFD1994F917007DCE8A /* Frameworks */,
+				0D03ABFE1994F917007DCE8A /* Resources */,
+				0D1C28EE1994FAAB00664C32 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D1C28E71994FAAB00664C32 /* PBXTargetDependency */,
+				0D1C28EA1994FAAB00664C32 /* PBXTargetDependency */,
+			);
+			name = swift_custom_keyboard;
+			productName = swift_custom_keyboard;
+			productReference = 0D03AC001994F917007DCE8A /* swift_custom_keyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D03AC111994F917007DCE8A /* swift_custom_keyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D03AC1F1994F917007DCE8A /* Build configuration list for PBXNativeTarget "swift_custom_keyboardTests" */;
+			buildPhases = (
+				0D03AC0E1994F917007DCE8A /* Sources */,
+				0D03AC0F1994F917007DCE8A /* Frameworks */,
+				0D03AC101994F917007DCE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D03AC141994F917007DCE8A /* PBXTargetDependency */,
+			);
+			name = swift_custom_keyboardTests;
+			productName = swift_custom_keyboardTests;
+			productReference = 0D03AC121994F917007DCE8A /* swift_custom_keyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D1C28DF1994FAAB00664C32 /* FlamencacaKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D1C28ED1994FAAB00664C32 /* Build configuration list for PBXNativeTarget "FlamencacaKeyboard" */;
+			buildPhases = (
+				0D1C28DC1994FAAB00664C32 /* Sources */,
+				0D1C28DD1994FAAB00664C32 /* Frameworks */,
+				0D1C28DE1994FAAB00664C32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlamencacaKeyboard;
+			productName = FlamencacaKeyboard;
+			productReference = 0D1C28E01994FAAB00664C32 /* FlamencacaKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D03ABF81994F917007DCE8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Tecnilogica;
+				TargetAttributes = {
+					0D03ABFF1994F917007DCE8A = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					0D03AC111994F917007DCE8A = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 0D03ABFF1994F917007DCE8A;
+					};
+					0D1C28DF1994FAAB00664C32 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 0D03ABFB1994F917007DCE8A /* Build configuration list for PBXProject "swift_custom_keyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D03ABF71994F917007DCE8A;
+			productRefGroup = 0D03AC011994F917007DCE8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D03ABFF1994F917007DCE8A /* swift_custom_keyboard */,
+				0D03AC111994F917007DCE8A /* swift_custom_keyboardTests */,
+				0D1C28DF1994FAAB00664C32 /* FlamencacaKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D03ABFE1994F917007DCE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D03AC0B1994F917007DCE8A /* Main.storyboard in Resources */,
+				0D03AC0D1994F917007DCE8A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D03AC101994F917007DCE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D1C28DE1994FAAB00664C32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D1C28F21995047400664C32 /* KeyboardInterface.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D03ABFC1994F917007DCE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D03AC081994F917007DCE8A /* ViewController.swift in Sources */,
+				0D03AC061994F917007DCE8A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D03AC0E1994F917007DCE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D03AC191994F917007DCE8A /* swift_custom_keyboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D1C28DC1994FAAB00664C32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D1C28E51994FAAB00664C32 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D03AC141994F917007DCE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D03ABFF1994F917007DCE8A /* swift_custom_keyboard */;
+			targetProxy = 0D03AC131994F917007DCE8A /* PBXContainerItemProxy */;
+		};
+		0D1C28E71994FAAB00664C32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D1C28DF1994FAAB00664C32 /* FlamencacaKeyboard */;
+			targetProxy = 0D1C28E61994FAAB00664C32 /* PBXContainerItemProxy */;
+		};
+		0D1C28EA1994FAAB00664C32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D1C28DF1994FAAB00664C32 /* FlamencacaKeyboard */;
+			targetProxy = 0D1C28E91994FAAB00664C32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D03AC091994F917007DCE8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D03AC0A1994F917007DCE8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D03AC1A1994F917007DCE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D03AC1B1994F917007DCE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D03AC1D1994F917007DCE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = swift_custom_keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0D03AC1E1994F917007DCE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = swift_custom_keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0D03AC201994F917007DCE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = swift_custom_keyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift_custom_keyboard.app/swift_custom_keyboard";
+			};
+			name = Debug;
+		};
+		0D03AC211994F917007DCE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = swift_custom_keyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift_custom_keyboard.app/swift_custom_keyboard";
+			};
+			name = Release;
+		};
+		0D1C28EB1994FAAB00664C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FlamencacaKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0D1C28EC1994FAAB00664C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlamencacaKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D03ABFB1994F917007DCE8A /* Build configuration list for PBXProject "swift_custom_keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D03AC1A1994F917007DCE8A /* Debug */,
+				0D03AC1B1994F917007DCE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D03AC1C1994F917007DCE8A /* Build configuration list for PBXNativeTarget "swift_custom_keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D03AC1D1994F917007DCE8A /* Debug */,
+				0D03AC1E1994F917007DCE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D03AC1F1994F917007DCE8A /* Build configuration list for PBXNativeTarget "swift_custom_keyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D03AC201994F917007DCE8A /* Debug */,
+				0D03AC211994F917007DCE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D1C28ED1994FAAB00664C32 /* Build configuration list for PBXNativeTarget "FlamencacaKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D1C28EB1994FAAB00664C32 /* Debug */,
+				0D1C28EC1994FAAB00664C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D03ABF81994F917007DCE8A /* Project object */;
+}
