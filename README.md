@@ -10,3 +10,7 @@ Featuring:
 - NSTimer
 - Simple data types: variables, constants, arrays
 - Simple control flow
+
+02 Flamencaca: a custom keyboard
+------------------------
+Example of a custom keyboard for iOS8. Updated to Xcode6b5
